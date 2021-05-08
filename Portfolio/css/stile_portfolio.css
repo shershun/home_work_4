@@ -27,6 +27,7 @@ body {
   font-weight: normal;
   font-size: 16px;
   line-height: 1.87;
+  background-color: var(--alt-title-cl);
 }
 /*Навигация*/
 .list {
@@ -35,8 +36,10 @@ body {
   list-style: none;
 }
 .nav-container {
-  width: 1170px;
+  width: 1200px;
   margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 header {
   border-bottom: 1px solid #ececec;
@@ -71,6 +74,8 @@ header {
   text-decoration: none;
 }
 .logo {
+  padding-top: 24px;
+  padding-bottom: 25px;
   font-family: Raleway;
   color: var(--title-cl);
   width: 700;
@@ -113,7 +118,6 @@ header {
   width: 16px;
   height: 16px;
 }
-
 .nav-adres-link {
   display: flex;
   padding-top: 32px;
@@ -129,20 +133,24 @@ header {
 .nav-adres-link:hover {
   color: var(--accent-cl);
 }
-}
 /*портфолио*/
-.portfplio {
-  width: 1170px;
+.portfplio-conteiner {
+  width: 1200px;
   margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .portfplio-nav {
+  margin: 0px 0px 50px 0px;
   list-style: none;
   display: flex;
   justify-content: center;
-  margin-top: 94px;
+  padding: 0px;
+
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 50px;
 }
 .link-nav {
   text-decoration: none;
@@ -167,17 +175,12 @@ header {
 .item:last-child {
   margin-right: 0px;
 }
-/*Примеры робот*/
-.examples-section {
-  width: 1170px;
-  margin: 0 auto;
-}
+
 .examples {
   display: flex;
   flex-wrap: wrap;
   padding: 0;
   margin: 0;
-  margin-bottom: 94px;
   margin-left: calc(-1 * 30px);
   margin-top: calc(-1 * 30px);
   list-style: none;
@@ -194,9 +197,12 @@ header {
 
 .examples-title {
   display: block;
-  margin-top: 20px;
-  margin-right: auto;
-  margin-left: 24px;
+  margin: 0px;
+
+  padding-top: 20px;
+  padding-right: auto;
+  padding-bottom: 4px;
+  padding-left: 24px;
 
   font-size: bold;
   font-size: 18px;
@@ -205,69 +211,63 @@ header {
 }
 .text {
   display: block;
-  margin-top: 4px;
-  margin-left: 24px;
-  margin-right: auto;
+  margin: 0px;
+  padding-left: 24px;
+  padding-bottom: 20px;
   color: var(--alt-text-cl);
 }
 /*Футер*/
-.footer {
+footer {
   background-color: var(--dark-bg);
 }
 
 .footer-container {
-  width: 1170px;
+  width: 1200px;
   margin: 0 auto;
-  padding: 0 15px;
-  display: flex;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
-.footer-bk {
-  background-color: var(--dark-bg);
+.footer-box {
+  display: flex;
 }
 .logo-footer {
   display: block;
-  padding-top: 60px;
   padding-bottom: 20px;
   color: var(--alt-title-cl);
 }
 .footer-adres {
   display: block;
-  margin-top: 0px;
-  margin-bottom: 9px;
+  margin: 0px;
   font-style: normal;
   font-size: 14px;
   color: var(--alt-title-cl);
 }
+.footer-adres-item {
+  padding-right: 70px;
+}
 .footer-link {
-  list-style: normal;
   color: rgba(255, 255, 255, 0.6);
 }
-.footer-link-margin {
-  margin-bottom: 9px;
-}
-.footer-link-margin:last-child {
-  padding-bottom: 60px;
-}
-.footer-social {
-  margin-top: 60px;
-  margin-left: 70px;
+.footer-item {
+  display: block;
+  padding-top: 9px;
 }
 .footer-title {
   display: block;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 16px;
   margin: 0;
   color: var(--alt-title-cl);
 }
 .footer-icon {
-  width: auto;
-  height: auto;
-  padding: 0;
+  margin: 0px;
+  padding: 10px 0px 0px 0px;
   list-style: none;
   display: inline-flex;
 }
-.footer-icon-item {
-}
+
 .footer-icon-link {
   display: flex;
   align-items: center;
@@ -275,6 +275,7 @@ header {
   width: 44px;
   height: 44px;
   border-radius: 50%;
+
   background-color: rgba(68, 69, 78, 1);
 }
 .footer-icon-item:not(:last-child) {

@@ -11,7 +11,10 @@
 a {
   list-style: none;
 }
-
+h1,
+h2 {
+  margin: 0;
+}
 img {
   display: block;
   max-width: 100%;
@@ -35,13 +38,12 @@ header {
   list-style: none;
 }
 .nav-container {
-  width: 1170px;
+  width: 1200px;
   margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
-.container {
-  width: 1170px;
-  margin: 0 auto;
-}
+
 .container_Flex {
   display: flex;
   align-items: center;
@@ -70,6 +72,8 @@ header {
   font-style: normal;
 }
 .logo {
+  padding-top: 24px;
+  padding-bottom: 25px;
   font-family: Raleway;
   color: var(--title-cl);
   width: 700;
@@ -134,23 +138,22 @@ header {
     ),
     url(../imags/fons-hiro/hero-bg.jpg);
   background-repeat: no-repeat;
-
-  width: 1600px;
-  margin-right: auto;
-  margin-left: auto;
+  background-position: 50% 50%;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
-.hiro-bk .container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+.hiro-container {
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .hiro-title {
   display: block;
   width: 696px;
-  height: 120px;
-  margin-top: 200px;
-  margin-bottom: 30px;
+  height: 140px;
+  padding-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
 
@@ -165,11 +168,9 @@ header {
 
 .hiro-button {
   display: block;
-  margin-bottom: 200px;
   margin-right: auto;
   margin-left: auto;
-  width: 200px;
-  height: 50px;
+  padding: 10px 32px 10px 32px;
   border: none;
   border-radius: 4px;
   font-style: normal;
@@ -183,47 +184,37 @@ header {
 }
 
 /*Технологии*/
-.section-bg {
-  background-color: var(--alt-title-cl);
+.about-conteiner {
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.section-about {
 }
 .section-tehnic {
   display: flex;
-  margin-top: 0px;
-  margin-bottom: 94px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
-.section-tehnic li {
-  width: 270px;
-  margin-right: 30px;
-}
-.section-tehnic li:last-child {
-  margin-right: 0px;
-}
-.section-icons-svg {
+
+.about-svg {
   width: 70px;
   height: 70px;
 }
-.section-icon {
-  list-style: none;
+
+.svg-conteiner {
   display: flex;
-  margin-top: 94px;
-  margin-bottom: 0px;
-  padding: 0px;
-}
-.section-icon-item {
-  margin-right: 30px;
-  display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   width: 270px;
   height: 120px;
   background-color: var(--second-bg);
 }
-.section-icon-item:last-child {
-  margin-right: 0px;
-}
-.aboutus-title {
-  margin-top: 30px;
-
+.about-title {
+  display: block;
+  padding-top: 30px;
+  margin: 0px;
   font-weight: bold;
   font-size: 14px;
   line-height: 16px;
@@ -231,24 +222,30 @@ header {
   text-transform: uppercase;
   color: var(--title-cl);
 }
+.about-item:not(:last-child) {
+  padding-right: 30px;
+}
 .aboutus-text {
-  margin-top: 10px;
+  margin: 0px;
+  padding-top: 10px;
+  width: 270px;
+  height: 75px;
   font-size: 14px;
   line-height: 24px;
   color: var(--alt-text-cl);
 }
 
 /*Чем мы занимаемся*/
-.wedoing-box {
-  width: 1170px;
-  margin: 0 auto;
 
-  padding-bottom: 94px;
+.wedoing-conteiner {
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 .wedoing-title {
   display: block;
-  margin-bottom: 50px;
-  margin-top: 0px;
+  padding-bottom: 50px;
 
   weight: 700;
   font-weight: bold;
@@ -257,36 +254,35 @@ header {
   text-align: center;
   letter-spacing: 0.03em;
 }
-.wedoing-container {
+.wedoing-list {
   display: flex;
-  align-items: center;
+  padding-bottom: 94px;
 }
 .wedoing-img {
   width: auto;
   height: auto;
   display: flex;
-  margin-right: 30px;
+  padding-right: 30px;
 }
 .wedoing-img:last-child {
-  margin-right: 0px;
+  padding-right: 0px;
 }
 /*Наша команда */
+
 .team-section {
   background-color: var(--second-bg);
 }
 .team-container {
-  width: 1170px;
+  width: 1200px;
   margin: 0 auto;
-
-  padding-top: 94px;
-  padding-bottom: 94px;
-  background-color: var(--second-bg);
+  padding-left: 15px;
+  padding-right: 15px;
 }
 .team-title {
   display: block;
   margin-right: auto;
   margin-left: auto;
-  margin-bottom: 50px;
+  padding-top: 94px;
 
   font-weight: bold;
   font-size: 36px;
@@ -308,12 +304,13 @@ header {
 }
 .team-img-box {
   display: flex;
+  padding-top: 50px;
+  padding-bottom: 94px;
 }
 .team-icon {
   display: flex;
-  margin-left: 30px;
-  margin-right: 30px;
-  margin-bottom: 30px;
+
+  padding: 16px 30px 32px;
 }
 
 .team-icon-link {
@@ -340,7 +337,8 @@ header {
 }
 
 .team-name {
-  margin-top: 30px;
+  margin: 0px;
+  padding-top: 30px;
 
   font-weight: 500;
   font-size: 16px;
@@ -349,7 +347,8 @@ header {
   color: var(--main-text-cl);
 }
 .team-prof {
-  margin-top: 10px;
+  margin: 0px;
+  padding-top: 10px;
   font-weight: normal;
   font-size: 16px;
   line-height: 1.18;
@@ -359,16 +358,17 @@ header {
 /*Постоянные клиенты*/
 
 .client-box {
-  width: 1170px;
+  width: 1200px;
   margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 .client-title {
   display: block;
   margin-right: auto;
   margin-left: auto;
-  margin-top: 94px;
-  margin-bottom: 50px;
-
+  padding-top: 94px;
+  padding-bottom: 50px;
   font-weight: bold;
   font-size: 36px;
   line-height: 42px;
@@ -378,9 +378,7 @@ header {
 }
 .client-conteiner {
   display: flex;
-  margin-bottom: 94px;
-}
-.client-item {
+  padding-bottom: 94px;
 }
 .client-item:not(:last-child) {
   margin-right: 30px;
@@ -407,45 +405,42 @@ header {
 }
 
 /*Футер*/
-.footer {
+footer {
   background-color: var(--dark-bg);
 }
 
 .footer-container {
-  width: 1170px;
+  width: 1200px;
   margin: 0 auto;
-  padding: 0 15px;
-  display: flex;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
-.footer-bk {
-  background-color: var(--dark-bg);
+.footer-box {
+  display: flex;
 }
 .logo-footer {
   display: block;
-  padding-top: 60px;
   padding-bottom: 20px;
   color: var(--alt-title-cl);
 }
 .footer-adres {
   display: block;
-  margin-top: 0px;
-  margin-bottom: 9px;
+  margin: 0px;
   font-style: normal;
   font-size: 14px;
   color: var(--alt-title-cl);
 }
+.footer-adres-item {
+  padding-right: 70px;
+}
 .footer-link {
   color: rgba(255, 255, 255, 0.6);
 }
-.footer-link-margin {
-  margin-bottom: 9px;
-}
-.footer-link-margin:last-child {
-  padding-bottom: 60px;
-}
-.footer-social {
-  margin-top: 60px;
-  margin-left: 70px;
+.footer-item {
+  display: block;
+  padding-top: 9px;
 }
 .footer-title {
   display: block;
@@ -455,9 +450,8 @@ header {
   color: var(--alt-title-cl);
 }
 .footer-icon {
-  width: auto;
-  height: auto;
-  padding: 0;
+  margin: 0px;
+  padding: 10px 0px 0px 0px;
   list-style: none;
   display: inline-flex;
 }
